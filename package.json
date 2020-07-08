@@ -1,0 +1,31 @@
+{
+  "name": "node_api",
+  "version": "1.0.0",
+  "description": "Api write in node.js",
+  "main": "index.js",
+  "scripts": {
+    "dev": "nodemon ./src/server.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/diegormb06/node-restful-api.git"
+  },
+  "keywords": [
+    "Node",
+    "api",
+    "restful"
+  ],
+  "author": "Diego Rodrigues",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/diegormb06/node-restful-api/issues"
+  },
+  "homepage": "https://github.com/diegormb06/node-restful-api#readme",
+  "dependencies": {
+    "express": "^4.17.1"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.4"
+  }
+}

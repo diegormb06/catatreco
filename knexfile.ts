@@ -1,7 +1,6 @@
-import knex from "knex";
 import path from "path";
 
-const connection = knex({
+module.exports = {
   client: "pg",
   connection: {
     host: "localhost",
@@ -9,6 +8,7 @@ const connection = knex({
     password: "admin",
     database: "waste_collect",
   },
-});
-
-export default connection;
+  migrations: {
+    directory: path.resolve(__dirname, "src", "database", "migrations"),
+  },
+};

@@ -6,9 +6,12 @@ module.exports = {
     host: "localhost",
     user: "postgres",
     password: "admin",
-    database: "waste_collect",
+    database: "catatreco",
   },
   migrations: {
     directory: path.resolve(__dirname, "src", "database", "migrations"),
+  },
+  seeds: {
+    directory: path.resolve(__dirname, "src", "database", "seeds"),
   },
 };

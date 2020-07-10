@@ -5,7 +5,9 @@
   "main": "index.js",
   "scripts": {
     "dev": "ts-node-dev ./src/server.ts",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "knex:migrate": "npx knex --knexfile knexfile.ts migrate:latest",
+    "knex:seed": "npx knex --knexfile knexfile.ts seed:run"
   },
   "repository": {
     "type": "git",

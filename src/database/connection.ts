@@ -7,7 +7,7 @@ const connection = knex({
     host: "localhost",
     user: "postgres",
     password: "admin",
-    database: "waste_collect",
+    database: "catatreco",
   },
 });
 
